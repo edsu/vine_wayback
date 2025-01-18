@@ -106,6 +106,7 @@ def write_html(path, vine):
     .vine {{
       max-width: 500;
       margin: 30 auto 30 auto;
+      text-align: center;
     }}
 
     video {{
