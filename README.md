@@ -33,7 +33,7 @@ Maybe you want to make this part of a script that downloads a bunch of vines. Yo
 ```python
 import vine_wayback
 
-vine_wayback.vine("https://vine.co/v/iuKJ7JjF2Jt", output_dir="my/dir", quiet=True)
+vine_wayback.download("https://vine.co/v/iuKJ7JjF2Jt", output_dir="my/dir", quiet=True)
 ```
 
 Or you can work with the metadata and video directly:
