@@ -45,11 +45,12 @@ def download(vine_url: str, metadata=False, quiet=False, output_dir=None):
 
     json_path = output_dir / f"{vine_id}.json"
     json.dump(v, open(json_path, "w"), indent=2)
-    if not quiet:
-        print(f"💾 saved {vine_url} to {output_dir.absolute()}")
 
     html_path = output_dir / "index.html"
     write_html(html_path, v)
+
+    if not quiet:
+        print(f"💾 saved {vine_url} to {output_dir.absolute()}")
 
 
 def vine(vine_url) -> dict:
@@ -90,8 +91,8 @@ def get_metadata(html) -> dict:
     for el in soup.select("head meta"):
         prop = el.attrs.get("property")
         content = el.attrs.get("content")
-        if prop and content:
-            metadata[el.attrs["property"]] = el.attrs["content"]
+        if prop:
+            metadata[prop] = content
     return metadata
 
 
