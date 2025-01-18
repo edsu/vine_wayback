@@ -1,6 +1,6 @@
 # vine_wayback
 
-vine_wayback tries to retrieve a Vine video and its metadata from the Wayback Machine. If the Vine can be found in the Wayback Machine it will be written to disk as an MP4, JSON and standalone HTML file which you can use to view the Vine.
+*vine_wayback* tries to retrieve a Vine video and its metadata from the Wayback Machine. If the Vine can be found in the Wayback Machine it will be written to disk as an MP4, JSON and standalone HTML file which you can use to view the Vine.
 
 ## Install
 
