@@ -97,6 +97,7 @@ def get_metadata(html) -> dict:
 
 
 def write_html(path, vine):
+    # note: need double brace escapes to not interpolate values
     html = f"""\
 <!DOCTYPE html>
 <html>
@@ -111,8 +112,9 @@ def write_html(path, vine):
     }}
 
     video {{
-        width: 500px;
-        height: 500px;
+      width: 480px;
+      height: 480px;
+      border: thin solid;
     }}
 
     .title {{
@@ -124,6 +126,13 @@ def write_html(path, vine):
       margin-top: 30px;
       font-style: italic;
       font-size: smaller;
+    }}
+
+    @media only screen and (max-width: 400px) {{
+      video {{
+        width: 350px;
+        height: 350px;
+      }}
     }}
   </style>
 </head>
