@@ -43,7 +43,9 @@ import vine_wayback
 
 vine = vine_wayback.vine("https://vine.co/v/iuKJ7JjF2Jt")
 
+# print some of the metadata
 print(vine['twitter:title'])
 
+# save the video
 open('media.mp4', 'wb').write(vine['video_raw'])
 ```
