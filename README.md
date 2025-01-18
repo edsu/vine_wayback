@@ -26,10 +26,20 @@ iuKJ7JjF2Jt
 └── iuKJ7JjF2Jt.mp4
 ```
 
-## Use as a function
+## Import
+
+Maybe you want to make this part of a script that downloads a bunch of vines. You can use the `download()` function to download the Vine where you want to:
 
 ```python
-from vine_wayback
+import vine_wayback
+
+vine_wayback.vine("https://vine.co/v/iuKJ7JjF2Jt", output_dir="my/dir", quiet=True)
+```
+
+Or you can work with the metadata and video directly:
+
+```python
+import vine_wayback
 
 vine = vine_wayback.vine("https://vine.co/v/iuKJ7JjF2Jt")
 
