@@ -97,9 +97,11 @@ def get_metadata(html) -> dict:
 
 def write_html(path, vine):
     html = f"""\
+<!DOCTYPE html>
 <html>
 <head>
   <title>{vine["twitter:title"]}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     .vine {{
       max-width: 500;
