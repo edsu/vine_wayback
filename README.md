@@ -12,6 +12,8 @@ pip install vine_wayback
 
 ## Run
 
+When you install *vine_wayback* you should get the `vine_wayback` command line utility installed as well:
+
 ```
 vine_wayback https://vine.co/v/iuKJ7JjF2Jt
 💾 saved https://vine.co/v/iuKJ7JjF2Jt to /Users/edsu/Projects/vine-wayback/iuKJ7JjF2Jt
